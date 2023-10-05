@@ -143,7 +143,7 @@
                 hasChanged: function() {
                     if (b.location.hash == "#no-back") {
                         b.location.hash = "#";
-                        b.location.href = "https://go.hotmart.com/C86823004F?ap=2c4b&sck=ofertaespecial"; //LINK PARA REDIRECIONAR AQUI
+                        b.location.href = "LINK"; //LINK PARA REDIRECIONAR AQUI
                     }
                 },
                 checkCompat: function() {
@@ -163,7 +163,7 @@
                             history.pushState(null, "", "#");
                         } else {
                             b.location.hash = "#";
-                            b.location.href = "https://go.hotmart.com/C86823004F?ap=2c4b&sck=ofertaespecial"; //LINK PARA REDIRECIONAR AQUI
+                            b.location.href = "LINK"; //LINK PARA REDIRECIONAR AQUI
                         }
                     }
                     a.checkCompat();
@@ -186,41 +186,9 @@
 </script>
 <!-- BACKREDIRECT !-->
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-P9Z27DT');</script>
-<!-- End Google Tag Manager -->
-
-  <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '654693606573574');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=654693606573574&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
 </head>
 
 <body>
-
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9Z27DT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  
   <div class="banner py-lg-1 py-sm-1 center white">
     ¡Felicitaciones! ¡Se ha activado su cupón de descuento!
 
@@ -237,7 +205,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Y parece que esta vez fue usted!</p>
     <p>Por este motivo, ahora tendrá la oportunidad de adquirir <strong>el Protocolo Prostata Saludable más bonos con un descuento del 30%.</strong></p>
     <h1>De <span class="crossed">US$ 37</span> por <span class="new-price">US$ 27</span></h1>
-    <a class="btn alt mt-3" href="https://go.hotmart.com/C86823004F?ap=2c4b&sck=ofertaespecial">
+    <a class="btn alt mt-3" href="https://go.hotmart.com/H80569941X?ap=3717&sck=ofertaespecial">
       ¡SÍ! QUIERO DESCUENTO
     </a>
     <br />
@@ -253,7 +221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>
      USE EL PROTOCOLO PROSTATA SALUDABLE AHORA Y RECUPERE LA SALUD DE SU PROSTATA...
     </p>
-    <a class="btn mt-3" href="https://go.hotmart.com/C86823004F?ap=2c4b&sck=ofertaespecial">
+    <a class="btn mt-3" href="https://go.hotmart.com/H80569941X?ap=3717&sck=ofertaespecial">
       ¡SÍ! ¡QUIERO ACCEDER AL PROTOCOLO AHORA MISMO!
     </a>
     <br /><br />
@@ -273,74 +241,4 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 </body>
 
-<!-- FIXADOR DE SRC !-->
-<script>
-    function parseQuery(qstr) {
-        var query = {};
-        var a = (qstr[0] === '?' ? qstr.substr(1) : qstr).split('&');
-        for (var i = 0; i < a.length; i++) {
-            var b = a[i].split('=');
-            query[decodeURIComponent(b[0])] = decodeURIComponent(b[1] || '');
-        }
-        return query;
-    }
-
-    function encodeQuery(obj) {
-        var str = [];
-        for (var p in obj)
-            if (obj.hasOwnProperty(p)) {
-                str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
-            }
-        return str.join("&");
-    }
-
-    function addQueryParameterToDomain(key, value) {
-        var links = document.querySelectorAll('a[href]'),
-            linksLength = links.length,
-            index,
-            queryIndex,
-            queryString,
-            query,
-            url,
-            domain,
-            colonSlashSlash;
-
-        for (index = 0; index < linksLength; ++index) {
-            url = links[index].href,
-                queryIndex = url.indexOf('?'),
-                colonSlashSlash = url.indexOf('://');
-
-            domain = url.substring(colonSlashSlash + 3);
-            domain = domain.substring(0, domain.indexOf('/'));
-
-            if (queryIndex === -1) {
-                url += '?' + key + '=' + value;
-            } else {
-                queryString = url.substring(queryIndex);
-                url = url.substring(0, queryIndex);
-                query = parseQuery(queryString);
-
-                query[key] = value;
-
-                url += '?' + encodeQuery(query);
-            }
-
-            links[index].href = url;
-        }
-    }
-
-    function addQuery(item) {
-        var arr = item.split('=');
-        if(arr[0] != null && arr[1] != undefined) {
-                addQueryParameterToDomain(arr[0], arr[1]);
-        }
-    }
-
-    jQuery(function() {
-        var url = window.location.search.replace("?", "");
-        var itens = url.split('&');
-        itens.forEach(addQuery);
-    });
-</script>
-<!-- FIXADOR DE SRC !-->  
 </html>
