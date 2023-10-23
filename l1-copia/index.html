@@ -157,17 +157,36 @@ src="https://www.facebook.com/tr?id=655871643222279&ev=PageView&noscript=1"
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9HVV2M9');</script>
+})(window,document,'script','dataLayer','GTM-P9Z27DT');</script>
 <!-- End Google Tag Manager -->
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHC0YD20HK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-WHC0YD20HK');
+</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11221471308"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11221471308');
+</script>
+  
   <!-- PIXEL AQUI !-->
   
 </head>
 <body>
 
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9HVV2M9"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9Z27DT"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   
@@ -484,7 +503,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="div-block"><img src="images/audio.svg" loading="lazy" alt="" class="image">
         <h1 class="legend"> ¡ASEGÚRESE DE QUE SU SONIDO ESTÉ ACTIVADO!</h1>
       </div>
-      <a id="openPopup" class="button animated-button1 full-width _2 w-inline-block" >
+      <a id="openPopup" class="esconder button animated-button1 full-width _2 w-inline-block" >
         <div class="text-block-67">Quiero acceder al protocolo prostata saludable</div>
         <div class="w-embed"><span></span>
           <span></span>
@@ -506,12 +525,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 100010;
+    z-index: 999;
+    
 }
 
 .popup-content {
-    background-color: #EE8935;
-
+    background-color: #100a06;
+    border-radius: 15px 15px 15px 15px; 
     width: 90%;
     max-width: 400px;
     margin: 100px auto;
@@ -532,24 +552,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 
 #checkoutForm input{
-  border: 3px solid red;
   width: 100%;
   height: 40px;
-  border: none;
   padding: 0px 12px;
   margin: 5px;
+  color:#212529; 
+  background-color:#fff; 
+  border:1px solid #ced4da; 
+  border-radius:.25rem;
 }
 
 #checkoutForm button{
   min-width: 140px;
     width: 100%;
-    background-color: #2a6bfc;
+    background-color: #EE8935;
     cursor: pointer;
     border: none;
     padding: 12px 45px;
     font-size: 1rem;
     margin: 10px;
-    color: white;
+
+    line-height:1.5; 
+    text-align:center; 
+    text-decoration:none; 
+    vertical-align:middle; 
+    cursor:pointer; 
+    font-size:1rem; 
+    margin-top: 9px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    text-shadow: 0 0 2px rgb(0 0 0 / 80%); 
+    padding: 13px; 
+    color: #fff; 
+    border-radius: 15px 15px 15px 15px; 
+    box-shadow: 0 -1px 20px 0  #EE8935;
+    border:1px solid transparent;
 }
 
 .close {
@@ -565,7 +602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="popup-content">
           <span class="close" id="closePopup">&times;</span>
           <h2>Crea tu acceso al protocolo ahora!</h2>
-          <form id="checkoutForm">
+          <form id="checkoutForm" method="post" action="https://webhook.sellflux.com/webhook/v2/form/lead/309e3fb6c98132ad9065bbadfe5c2319?redirect_url=https%3A%2F%2Fgo.hotmart.com%2FC86823004F%3Fap%3Df5e6%26sck%3Dlead1">
               <label for="name"></label>
               <input type="text" id="name" name="name" placeholder="Introduce tu nombre completo" required>
 
@@ -595,21 +632,23 @@ closePopupButton.addEventListener("click", () => {
     popup.style.display = "none";
 });
 
-checkoutForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// checkoutForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const phone = document.getElementById("phone").value;
 
-     //URL de redirecionamento com os dados preenchidos
-     const redirectToURL = `https://pay.hotmart.com/F85858495L?checkoutMode=10&ref=C86823004F&sck=lead1&bid=1697564752785&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
+//      //URL de redirecionamento com os dados preenchidos
+//      const redirectToURL = `https://pay.hotmart.com/F85858495L?checkoutMode=10&ref=C86823004F&sck=lead1&bid=1697564752785&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}`;
 
-window.location.href = redirectToURL;
+     
+
+// window.location.href = redirectToURL;
 
     
-    popup.style.display = "none";
-});
+//     popup.style.display = "none";
+// });
 
 
 
