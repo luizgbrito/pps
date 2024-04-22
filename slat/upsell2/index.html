@@ -31,6 +31,10 @@
   gtag('config', 'AW-11221471308');
 </script>
 
+        <!-- SlatPay Upsell Script | Put in <head> -->
+      <script src="https://js.stripe.com/v3/"></script>
+      <script src="https://slatpay.com/slatupsl.min.js"></script>
+
 </head>
 <body>
 
@@ -85,25 +89,26 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
   <div style="margin: auto;">
     <div class="esconder">
-<!-- HOTMART - Upsell Widget -->
-<div id="box_hotmart"></div>
-<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
 
-<script>
-opts = {
-key: 'USL-131278-426107-d5d4808751e2deba8efeb649033afcb2',
-width: '650' ,
-height: '420'
-};
-Upsell.Widget.show(opts);
-</script>
-<!-- HOTMART - Upsell Widget [end] -->
-
+    <!-- SlatPay Upsell Bar -->
+      <div
+        style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem;"
+      >
+        <button style="background: #7ed321; color: #000000; cursor: pointer; font-size: 1.25rem; border-radius: 6px; border: 0; font-weight: bold; height: 50px; min-width: 150px; padding: 0 20px;" id="upsellButton" value="d68e7e54-480e-4787-abdc-de129fe67739" data-href="https://prostatasaludable.site/slat/upsell2/" data-offer="882576ec-5730-4092-a44b-7c4f6ff2961e">
+          Sí, quiero esto
+        </button>
+        <a id="downsellLink" style="text-decoration: none; color: #333;" href="https://prostatasaludable.site/slat/downsell1/">
+          No...
+        </a>
+      </div>
 
 
     </div>
   </div>
 </div>
+
+  <br>
+  <br>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
